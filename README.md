@@ -71,7 +71,7 @@ Aplikasi ini menggunakan pendekatan **Pemrograman Berorientasi Objek (OOP)** den
 ![use case](https://github.com/user-attachments/assets/4b4efc06-60a4-4a4a-8573-23f2dfae0e86)
 
 ### **🧍‍♂️Aktor utama:**
-Admin/Pegawai Toko (pengguna sistem)
+Admin (pengguna sistem)
 
 ### **🗒️Use Case:**
 - Menambahkan data handphone → Admin memasukkan informasi handphone yang terjual.
@@ -82,6 +82,21 @@ Admin/Pegawai Toko (pengguna sistem)
 ---
 
 ## 4. Sequence Diagram
+![sequence](https://github.com/user-attachments/assets/12c7b88d-9cb2-4dce-936c-9625ae3ad469
+)
+
+### **📲Alur Interaksi dalam Sistem**
+**▫️Membuat Objek Handphone**
+   - Admin akan menginput informasi berdasarkan atribut yang ada pada  **`Handphone`** dan atribut tambahan pada sub class **`iPhone, Samsung, dan Xiaomi`**.
+
+**▫️Menyimpan Objek Handphone**
+   - Semua data akan disimpan pada list **`daftar_hp`**.
+
+**▫️Menampilkan Informasi Penjualan Handphone**
+   - Sistem memanggil **`tampilkan_info()`** untuk menampilkan semua daftar penjualan handphone.
+
+**▫️Menghitung Total Penjualan Handphone**
+   - Sistem memanggil **`total_penjualan()`** untuk menghitung total penjualan handphone, baik berdasarkan merk maupun total keseluruhan.
 
 ---
 

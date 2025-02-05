@@ -1,5 +1,6 @@
-# Python---OOP
-**Fellicia Devina**
+# 💻Python---OOP💻
+## by: Fellicia Devina
+**Berikut adalah materi tentang OOP pada Python:**
 
 ---
 

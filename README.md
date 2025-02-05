@@ -1,8 +1,7 @@
 # 💻Python---OOP💻
 ## by: Fellicia Devina
-## **Berikut adalah materi tentang OOP pada Python:**
 ---
-
+## **Berikut adalah materi tentang OOP pada Python:**
 ## 1. Konsep dasar OOP Python
 [Diagram Konsep](https://excalidraw.com/#json=w6A36x2xQb6Bk_yD8fVpT,ct1yy5XzDHssWsyY1YI3Ww)
 

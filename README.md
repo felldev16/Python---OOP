@@ -1,6 +1,6 @@
 # 💻Python---OOP💻
 ## by: Fellicia Devina
-**Berikut adalah materi tentang OOP pada Python:**
+## **Berikut adalah materi tentang OOP pada Python:**
 
 ---
 
@@ -40,6 +40,6 @@ Abstraksi (*Abstraction*)
 ---
 
 ## 5. CLI Apps
-<img width="130" alt="{6F0AC56C-6368-4E29-96AD-670C65DC7AFC}" src="https://github.com/user-attachments/assets/931b9eec-1fac-45b1-a903-96d4f3c800e5" />
+![output](https://github.com/user-attachments/assets/931b9eec-1fac-45b1-a903-96d4f3c800e5)
 
 ---

@@ -87,7 +87,7 @@ Admin (pengguna sistem)
 
 ### **📲Alur Interaksi dalam Sistem**
 **▫️Membuat Objek Handphone**
-   - Admin akan menginput informasi berdasarkan atribut yang ada pada  **`Handphone`** dan atribut tambahan pada sub class **`iPhone, Samsung, dan Xiaomi`**.
+   - Admin akan menginput informasi berdasarkan atribut yang ada pada  **`Handphone`** dengan memanggil fungsi **`input_user()`** dan atribut tambahan pada sub class **`iPhone, Samsung, dan Xiaomi`**.
 
 **▫️Menyimpan Objek Handphone**
    - Semua data akan disimpan pada list **`daftar_hp`**.

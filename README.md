@@ -1,7 +1,15 @@
-# 💻Python---OOP💻
-## by: Fellicia Devina
+# Python---OOP💻
+## Fellicia Devina
 ---
-### **Berikut adalah materi tentang OOP pada Python:**
+
+## 💡Tentang aplikasi Data Penjualan Handphone
+Aplikasi ini dirancang untuk:
+- Mencatat penjualan handphone dengan informasi detail dari berbagai merek.
+- Menghitung total penjualan berdasarkan harga dan jumlah unit yang terjual secara otomatis.
+
+
+Aplikasi ini menggunakan pendekatan **Pemrograman Berorientasi Objek (OOP)** dengan Python, yang memudahkan admin dalam mengelola data dan memberikan kemudahan dalam perhitungan penjualan yang lebih efisien.
+
 ## 1. Konsep dasar OOP Python
 [Diagram Konsep](https://excalidraw.com/#json=w6A36x2xQb6Bk_yD8fVpT,ct1yy5XzDHssWsyY1YI3Ww)
 

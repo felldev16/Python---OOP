@@ -7,7 +7,7 @@
 ## 1. Konsep dasar OOP Python
 [Diagram Konsep](https://excalidraw.com/#json=w6A36x2xQb6Bk_yD8fVpT,ct1yy5XzDHssWsyY1YI3Ww)
 
-![image excalidraw]("https://github.com/user-attachments/assets/c7cd30b3-1da8-44fe-aef2-c534a993314d")
+![image excalidraw](https://github.com/user-attachments/assets/c7cd30b3-1da8-44fe-aef2-c534a993314d)
 
 **Dalam konsep OOP, berikut prinsip-prinsip OOP yang digunakan pada aplikasi ini: **
 Enkapsulasi (*Encapsulation*)
@@ -26,7 +26,13 @@ Abstraksi (*Abstraction*)
 ---
 
 ## 2. Class Diagram
+![class diagram](https://github.com/user-attachments/assets/356752a5-2ac2-43bb-b49a-56cbdf641cc6)
+
 ---
+
 ## 3. Use Case Diagram
+![use case](https://github.com/user-attachments/assets/4b4efc06-60a4-4a4a-8573-23f2dfae0e86)
+
 ---
+
 ## 4. Sequence Diagram

@@ -22,12 +22,14 @@ class Handphone:
         print("Spesifikasi:")
         for key, value in self.spesifikasi.items():
             print(f"  - {key}: {value}")
+    
+    def total_penjualan(self):
+        return self.jumlah * self.harga
 
 #sub class : mewarisi atribut dan fungsi dari super class
-class iPhone(Handphone): #sub class 1
+class iPhone(Handphone): #sub class 1, tambahan atribut: ios_version dan face_id
     def __init__(self, model, tanggal_jual, harga, jumlah, warna, memori_internal, ios_version: float, face_id: bool):
         super().__init__("iPhone", model, tanggal_jual, harga, jumlah, warna, memori_internal)
-        # tambahan atribut, yaitu ios_version dan face_id
         self.ios_version = ios_version
         self.face_id = face_id  # True jika mendukung Face ID
 
@@ -36,10 +38,9 @@ class iPhone(Handphone): #sub class 1
         print(f"Versi iOS: {self.ios_version}")
         print(f"Face ID: {'Ya' if self.face_id else 'Tidak'}")
 
-class Samsung(Handphone): #sub class 2
+class Samsung(Handphone): #sub class 2, tambahan atribut: oneUI_version dan s_pen
     def __init__(self, model, tanggal_jual, harga, jumlah, warna, memori_internal, oneUI_version: float, s_pen: bool):
         super().__init__("Samsung", model, tanggal_jual, harga, jumlah, warna, memori_internal)
-        # tambahan atribut, yaitu oneUI_version dan s_pen
         self.oneUI_version = oneUI_version
         self.s_pen = s_pen  # True jika mendukung S-Pen
 
@@ -48,10 +49,9 @@ class Samsung(Handphone): #sub class 2
         print(f"One UI Version: {self.oneUI_version}")
         print(f"S-Pen Support: {'Ya' if self.s_pen else 'Tidak'}")
 
-class Xiaomi(Handphone): #sub class 3
+class Xiaomi(Handphone): #sub class 3, tambahan atribut: miUI_version dan watt_fastCharge
     def __init__(self, model, tanggal_jual, harga, jumlah, warna, memori_internal, miUI_version: float, watt_fastCharge: int):
         super().__init__("Xiaomi",model, tanggal_jual, harga, jumlah, warna, memori_internal)
-        # tambahan atribut, yaitu miUI_version dan watt_fastCharge
         self.miUI_version = miUI_version
         self.watt_fastCharge = watt_fastCharge  # Watt pengisian daya cepat
 
@@ -62,34 +62,52 @@ class Xiaomi(Handphone): #sub class 3
 
 def input_user():
     model = input("Masukkan model handphone: ")
-    tanggal_jual = input("Masukkan tanggal jual handphone (dd-mm-yyyy): ")
     harga = float(input("Masukkan harga handphone (Satuan): "))
     jumlah = int(input("Masukkan jumlah handphone: "))
     warna = input("Masukkan warna handphone: ").title()
     memori_internal = int(input("Masukkan memori internal handphone (GB): "))
-    return model, tanggal_jual, harga, jumlah, warna, memori_internal
+    return model, harga, jumlah, warna, memori_internal
 
 if __name__ == "__main__":
-    merk = input("Masukkan jenis handphone: ").lower()
-    if merk == "iphone":
-        model, tanggal_jual, harga, jumlah, warna, memori_internal = input_user()
-        ios_version = float(input("Versi iOS: "))
-        face_id = input("Mendukung Face ID? (y/n): ").lower() == 'y'
-        hp1 = iPhone(model, tanggal_jual, harga, jumlah, warna, memori_internal, ios_version, face_id)
-        hp1.tampilkan_info()       
-    elif merk == "samsung":
-        model, tanggal_jual, harga, jumlah, warna, memori_internal = input_user()
-        oneUI_version = float(input("Versi One UI: "))
-        s_pen = input("Mendukung S-Pen? (y/n): ").lower() == 'y'
-        hp1 = Samsung(model, tanggal_jual, harga, jumlah, warna, memori_internal, oneUI_version, s_pen)
-        hp1.tampilkan_info()
-    elif merk == "xiaomi":
-        model, tanggal_jual, harga, jumlah, warna, memori_internal = input_user()
-        miUI_version = float(input("Versi MIUI: "))
-        watt_fastCharge = int(input("Fast Charging (Watt): "))
-        hp1 = Samsung(model, tanggal_jual, harga, jumlah, warna, memori_internal, miUI_version, watt_fastCharge)
-        hp1.tampilkan_info()
-    else:
-        print("Merk tidak tersedia")
-        print("====Program Selesai====")
-        exit()
+    daftar_hp = []
+
+    print("DATA PENJUALAN HANDPHONE TOKO ABC")
+    print("="*45 + "\n")
+    tanggal_jual = input("Masukkan tanggal jual handphone (dd-mm-yyyy): ")
+    while True:
+        merk = input("Masukkan jenis handphone (iPhone/Samsung/Xiaomi) atau 'done' untuk keluar: ").lower()
+        if merk == "done":
+            break
+        
+        model, harga, jumlah, warna, memori_internal = input_user()
+        if merk == "iphone":
+            ios_version = float(input("Versi iOS: "))
+            face_id = input("Mendukung Face ID? (y/n): ").lower() == 'y'
+            daftar_hp.append(iPhone(model, tanggal_jual, harga, jumlah, warna, memori_internal, ios_version, face_id))
+        elif merk == "samsung":
+            oneUI_version = float(input("Versi One UI: "))
+            s_pen = input("Mendukung S-Pen? (y/n): ").lower() == 'y'
+            daftar_hp.append(Samsung(model, tanggal_jual, harga, jumlah, warna, memori_internal, oneUI_version, s_pen))
+        elif merk == "xiaomi":
+            miUI_version = float(input("Versi MIUI: "))
+            watt_fastCharge = int(input("Fast Charging (Watt): "))
+            daftar_hp.append(Xiaomi(model, tanggal_jual, harga, jumlah, warna, memori_internal, miUI_version, watt_fastCharge))
+        else:
+            print("Merk tidak tersedia")
+    
+    print("\n==== Data Handphone yang Terjual ====")
+    total_all = 0
+    data_terjual = {"iPhone": 0, "Samsung": 0, "Xiaomi": 0}
+    
+    for hp in daftar_hp:
+        hp.tampilkan_info()
+        total_penjualan = hp.total_penjualan()
+        total_all += total_penjualan
+        data_terjual[hp.merk] += total_penjualan
+    
+    print("\n==== Total Penjualan Per Merk ====")
+    for merk, total in data_terjual.items():
+        print(f"{merk}: Rp{total:,.2f}")
+    
+    print("\n==== Total Semua Penjualan ====")
+    print(f"Rp{total_all:,.2f}")

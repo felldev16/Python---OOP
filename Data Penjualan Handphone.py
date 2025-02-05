@@ -95,13 +95,14 @@ if __name__ == "__main__":
         else:
             print("Merk tidak tersedia")
     
-    print("\n==== Data Handphone yang Terjual ====")
+    print(f"\n==== Data Handphone yang Terjual pada {tanggal_jual} ====")
     total_all = 0
     data_terjual = {"iPhone": 0, "Samsung": 0, "Xiaomi": 0}
     
     for hp in daftar_hp:
         hp.tampilkan_info()
         total_penjualan = hp.total_penjualan()
+        
         total_all += total_penjualan
         data_terjual[hp.merk] += total_penjualan
     
@@ -110,4 +111,4 @@ if __name__ == "__main__":
         print(f"{merk}: Rp{total:,.2f}")
     
     print("\n==== Total Semua Penjualan ====")
-    print(f"Rp{total_all:,.2f}")
+    print(f"Total keseluruhan penjualan sebesar Rp{total_all:,.2f}")

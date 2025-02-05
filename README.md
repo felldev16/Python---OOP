@@ -1,7 +1,6 @@
 # 💻Python---OOP💻
 ## by: Fellicia Devina
 ## **Berikut adalah materi tentang OOP pada Python:**
-
 ---
 
 ## 1. Konsep dasar OOP Python

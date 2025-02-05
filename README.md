@@ -11,7 +11,7 @@ Aplikasi ini dirancang untuk:
 Aplikasi ini menggunakan pendekatan **Pemrograman Berorientasi Objek (OOP)** dengan Python, yang memudahkan admin dalam mengelola data dan memberikan kemudahan dalam perhitungan penjualan yang lebih efisien.
 
 ## 1. Konsep dasar OOP Python
-[Diagram Konsep](https://excalidraw.com/#json=5l4fp7Vkh2vlBYlY4qzKF,mYjsEvhXHOIHIMbCpAmD-A)
+[Diagram Konsep OOP](https://excalidraw.com/#json=5l4fp7Vkh2vlBYlY4qzKF,mYjsEvhXHOIHIMbCpAmD-A)
 
 ![image excalidraw](https://github.com/user-attachments/assets/c7cd30b3-1da8-44fe-aef2-c534a993314d)
 

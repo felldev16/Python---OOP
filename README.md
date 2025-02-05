@@ -82,8 +82,7 @@ Admin (pengguna sistem)
 ---
 
 ## 4. Sequence Diagram
-![sequence](https://github.com/user-attachments/assets/12c7b88d-9cb2-4dce-936c-9625ae3ad469
-)
+![sequence](https://github.com/user-attachments/assets/157700e1-1120-410a-a087-09acbe3d93ca)
 
 ### **📲Alur Interaksi dalam Sistem**
 **▫️Membuat Objek Handphone**
@@ -91,12 +90,12 @@ Admin (pengguna sistem)
 
 **▫️Menyimpan Objek Handphone**
    - Semua data akan disimpan pada list **`daftar_hp`**.
-
-**▫️Menampilkan Informasi Penjualan Handphone**
-   - Sistem memanggil **`tampilkan_info()`** untuk menampilkan semua daftar penjualan handphone.
-
+  
 **▫️Menghitung Total Penjualan Handphone**
    - Sistem memanggil **`total_penjualan()`** untuk menghitung total penjualan handphone, baik berdasarkan merk maupun total keseluruhan.
+
+**▫️Menampilkan Informasi Penjualan Handphone**
+   - Sistem memanggil **`tampilkan_info()`** untuk menampilkan semua daftar penjualan handphone dan total penjualan.
 
 ---
 

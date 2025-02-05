@@ -6,6 +6,7 @@
 
 ## 1. Konsep dasar OOP Python
 [Diagram Konsep](https://excalidraw.com/#json=w6A36x2xQb6Bk_yD8fVpT,ct1yy5XzDHssWsyY1YI3Ww)
+
 ![image excalidraw]("https://github.com/user-attachments/assets/c7cd30b3-1da8-44fe-aef2-c534a993314d")
 
 **Dalam konsep OOP, berikut prinsip-prinsip OOP yang digunakan pada aplikasi ini: **
